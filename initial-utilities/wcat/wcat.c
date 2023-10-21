@@ -9,14 +9,14 @@ int main(int argc, char *argv[])
         FILE *fp = fopen(argv[i], "r");
         if (fp == NULL)
         {
-            printf("Error: cannot open file \n");
+            printf("wcat: cannot open file\n");
             return (1);
         }
 
         // create a buffer and load the first n bytes on it
         char buffer[1024];
-        // get a line, max size = size of buffer
 
+        // get a line, max size = size of buffer
         while (fgets(buffer, sizeof(buffer), fp))
         {
             printf("%s", buffer);
