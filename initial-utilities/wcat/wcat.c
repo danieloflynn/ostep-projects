@@ -2,7 +2,7 @@
 
 int main(int argc, char *argv[])
 {
-    // Check that too many arguments haven't been given
+
     for (int i = 1; i < argc; i++)
     {
         // check file exists
